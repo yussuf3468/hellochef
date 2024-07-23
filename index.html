@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLOCHEF | clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/16edaccdd1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <svg viewBox="0 0 132 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M46.6447 6.75098H41.7716V27.9993H46.6447V6.75098Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.759 27.9991V19.0979C15.759 16.9151 15.7879 15.0204 14.2656 13.269C13.2314 12.0625 11.4801 11.5177 9.93011 11.5177C8.32223 11.5177 6.6565 12.0348 5.82363 13.5282H5.76698V6.75195H1V27.9991H5.76698V19.1558C5.76698 17.3466 6.36964 15.9967 8.43794 15.9967C10.505 15.9967 10.9932 17.6045 10.9932 19.3269V27.9979H15.759V27.9991Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M100.877 27.9993V19.0981C100.877 16.9165 100.906 15.0218 99.3839 13.2693C98.3497 12.0628 96.5984 11.518 95.0484 11.518C93.4405 11.518 91.7748 12.035 90.9419 13.5272H90.8841V6.75098H86.1183V27.9993H90.8841V19.156C90.8841 17.3468 91.4867 15.9981 93.555 15.9981C95.6221 15.9981 96.1103 17.606 96.1103 19.3283V27.9993H100.877Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M127.972 16.0849H125.962V27.9981H121.197V16.0849H119.416V12.4678H121.197V11.6349C121.197 7.75864 123.953 6.75342 127.284 6.75342H127.973V10.3428C126.251 10.3428 125.964 10.6875 125.964 12.4678H127.973V16.0849H127.972Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.8109 27.9993V6.75098H34.9379V27.9993H39.8109Z" fill="#E42A12"></path><path d="M56.234 11.0332C51.549 11.0332 47.7511 14.8311 47.7511 19.5161C47.7511 24.2012 51.549 27.9991 56.234 27.9991C60.9191 27.9991 64.717 24.2012 64.717 19.5161C64.717 14.8311 60.9191 11.0332 56.234 11.0332ZM56.234 23.5383C54.0223 23.5383 52.4144 21.6712 52.4144 19.5186C52.4144 17.3647 54.0223 15.4989 56.234 15.4989C58.4446 15.4989 60.0525 17.3647 60.0525 19.5186C60.0525 21.6724 58.4446 23.5383 56.234 23.5383Z" fill="#E42A12"></path><path d="M56.9086 9.60708C56.9134 9.61191 56.9182 9.61673 56.923 9.62155C57.698 10.3869 58.9094 10.5352 59.8579 9.99881C61.0669 9.3142 61.9769 8.16192 62.3421 6.78787C62.4554 6.35999 62.5168 5.908 62.5168 5.44516C62.5168 5.00281 62.4614 4.57132 62.3565 4.16031C61.9455 4.05544 61.514 4 61.0717 4C60.6089 4 60.1569 4.06147 59.729 4.17477C58.3549 4.53998 57.2027 5.44998 56.518 6.65891C55.9817 7.60628 56.1299 8.81881 56.8953 9.59383C56.8989 9.59744 56.9037 9.60226 56.9086 9.60708Z" fill="#E42A12"></path><path d="M80.0734 21.4408C79.4442 22.6714 78.2196 23.5356 76.7154 23.5356C74.5036 23.5356 72.8958 21.6686 72.8958 19.5159C72.8958 17.362 74.5036 15.4962 76.7154 15.4962C78.2895 15.4962 79.5575 16.4436 80.1577 17.7658H85.0139C84.2076 13.9209 80.799 11.0342 76.7154 11.0342C72.0316 11.0342 68.2361 14.8321 68.2361 19.5171C68.2361 24.2021 72.0328 28.0001 76.7154 28.0001C80.7363 28.0001 84.1039 25.2001 84.9753 21.442H80.0734V21.4408Z" fill="#E42A12"></path><path d="M113.547 22.4812C112.818 23.4177 111.735 24.0252 110.466 24.0252C108.596 24.0252 107.13 22.7078 106.603 20.9577H111.28H114.327H118.825C118.906 20.4888 118.948 20.0079 118.948 19.5161C118.948 14.8311 115.15 11.0332 110.465 11.0332C105.78 11.0332 101.982 14.8311 101.982 19.5161C101.982 24.2012 105.78 27.9991 110.465 27.9991C114.106 27.9991 117.212 25.7042 118.415 22.4812H113.547ZM110.466 15.0071C112.215 15.0071 113.61 16.1594 114.213 17.7383H106.718C107.323 16.1594 108.717 15.0071 110.466 15.0071Z" fill="#E42A12"></path><path d="M28.4287 22.4812C27.6994 23.4177 26.6171 24.0252 25.3479 24.0252C23.4773 24.0252 22.0116 22.7078 21.4849 20.9577H26.1615H29.2085H33.7067C33.7874 20.4888 33.8296 20.0079 33.8296 19.5161C33.8296 14.8311 30.0317 11.0332 25.3467 11.0332C20.6617 11.0332 16.8637 14.8311 16.8637 19.5161C16.8637 24.2012 20.6617 27.9991 25.3467 27.9991C28.9879 27.9991 32.094 25.7042 33.2969 22.4812H28.4287ZM25.3491 15.0071C27.098 15.0071 28.4925 16.1594 29.0964 17.7383H21.6006C22.2045 16.1594 23.599 15.0071 25.3491 15.0071Z" fill="#E42A12"></path></svg>
+        </ul>
+    </nav>
+
+    <nav>
+        <svg viewBox="0 0 132 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M46.6447 6.75098H41.7716V27.9993H46.6447V6.75098Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.759 27.9991V19.0979C15.759 16.9151 15.7879 15.0204 14.2656 13.269C13.2314 12.0625 11.4801 11.5177 9.93011 11.5177C8.32223 11.5177 6.6565 12.0348 5.82363 13.5282H5.76698V6.75195H1V27.9991H5.76698V19.1558C5.76698 17.3466 6.36964 15.9967 8.43794 15.9967C10.505 15.9967 10.9932 17.6045 10.9932 19.3269V27.9979H15.759V27.9991Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M100.877 27.9993V19.0981C100.877 16.9165 100.906 15.0218 99.3839 13.2693C98.3497 12.0628 96.5984 11.518 95.0484 11.518C93.4405 11.518 91.7748 12.035 90.9419 13.5272H90.8841V6.75098H86.1183V27.9993H90.8841V19.156C90.8841 17.3468 91.4867 15.9981 93.555 15.9981C95.6221 15.9981 96.1103 17.606 96.1103 19.3283V27.9993H100.877Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M127.972 16.0849H125.962V27.9981H121.197V16.0849H119.416V12.4678H121.197V11.6349C121.197 7.75864 123.953 6.75342 127.284 6.75342H127.973V10.3428C126.251 10.3428 125.964 10.6875 125.964 12.4678H127.973V16.0849H127.972Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.8109 27.9993V6.75098H34.9379V27.9993H39.8109Z" fill="#E42A12"></path><path d="M56.234 11.0332C51.549 11.0332 47.7511 14.8311 47.7511 19.5161C47.7511 24.2012 51.549 27.9991 56.234 27.9991C60.9191 27.9991 64.717 24.2012 64.717 19.5161C64.717 14.8311 60.9191 11.0332 56.234 11.0332ZM56.234 23.5383C54.0223 23.5383 52.4144 21.6712 52.4144 19.5186C52.4144 17.3647 54.0223 15.4989 56.234 15.4989C58.4446 15.4989 60.0525 17.3647 60.0525 19.5186C60.0525 21.6724 58.4446 23.5383 56.234 23.5383Z" fill="#E42A12"></path><path d="M56.9086 9.60708C56.9134 9.61191 56.9182 9.61673 56.923 9.62155C57.698 10.3869 58.9094 10.5352 59.8579 9.99881C61.0669 9.3142 61.9769 8.16192 62.3421 6.78787C62.4554 6.35999 62.5168 5.908 62.5168 5.44516C62.5168 5.00281 62.4614 4.57132 62.3565 4.16031C61.9455 4.05544 61.514 4 61.0717 4C60.6089 4 60.1569 4.06147 59.729 4.17477C58.3549 4.53998 57.2027 5.44998 56.518 6.65891C55.9817 7.60628 56.1299 8.81881 56.8953 9.59383C56.8989 9.59744 56.9037 9.60226 56.9086 9.60708Z" fill="#E42A12"></path><path d="M80.0734 21.4408C79.4442 22.6714 78.2196 23.5356 76.7154 23.5356C74.5036 23.5356 72.8958 21.6686 72.8958 19.5159C72.8958 17.362 74.5036 15.4962 76.7154 15.4962C78.2895 15.4962 79.5575 16.4436 80.1577 17.7658H85.0139C84.2076 13.9209 80.799 11.0342 76.7154 11.0342C72.0316 11.0342 68.2361 14.8321 68.2361 19.5171C68.2361 24.2021 72.0328 28.0001 76.7154 28.0001C80.7363 28.0001 84.1039 25.2001 84.9753 21.442H80.0734V21.4408Z" fill="#E42A12"></path><path d="M113.547 22.4812C112.818 23.4177 111.735 24.0252 110.466 24.0252C108.596 24.0252 107.13 22.7078 106.603 20.9577H111.28H114.327H118.825C118.906 20.4888 118.948 20.0079 118.948 19.5161C118.948 14.8311 115.15 11.0332 110.465 11.0332C105.78 11.0332 101.982 14.8311 101.982 19.5161C101.982 24.2012 105.78 27.9991 110.465 27.9991C114.106 27.9991 117.212 25.7042 118.415 22.4812H113.547ZM110.466 15.0071C112.215 15.0071 113.61 16.1594 114.213 17.7383H106.718C107.323 16.1594 108.717 15.0071 110.466 15.0071Z" fill="#E42A12"></path><path d="M28.4287 22.4812C27.6994 23.4177 26.6171 24.0252 25.3479 24.0252C23.4773 24.0252 22.0116 22.7078 21.4849 20.9577H26.1615H29.2085H33.7067C33.7874 20.4888 33.8296 20.0079 33.8296 19.5161C33.8296 14.8311 30.0317 11.0332 25.3467 11.0332C20.6617 11.0332 16.8637 14.8311 16.8637 19.5161C16.8637 24.2012 20.6617 27.9991 25.3467 27.9991C28.9879 27.9991 32.094 25.7042 33.2969 22.4812H28.4287ZM25.3491 15.0071C27.098 15.0071 28.4925 16.1594 29.0964 17.7383H21.6006C22.2045 16.1594 23.599 15.0071 25.3491 15.0071Z" fill="#E42A12"></path></svg>
+        <ul>
+            <li>
+                <a href="">Our plan</a>
+            </li>
+            <li>
+                <a href="">Weekly Menu</a>
+            </li>
+            <li>
+                <a href="">How It Works</a>
+            </li>
+            <button>Sign in</button>
+            </ul>
+    </nav>
+<main>
+
+    <!-- sectionOne -->
+<section class="sectionOne">
+        <img src="css/images/mobile banner.jpg" alt="">
+        <img src="css/images/banner.webp" alt="">
+    <div class="overlay">
+      <h1>Say hello to a new way of cooking</h1> 
+      <p> Delicious recipes. Delivered by us, made by you. Ready to unbox mealtime?</p> 
+      <button>Get started</button>
+    </div>
+</section>
+   
+<!-- SECTION TWO -->
+<section class="sectionTwo">
+    <h2>Why choose us?</h2>
+    <p>
+    Eat well for less with impressively 
+    easy meals starting from AED 35 per serving
+    </p>
+    <div class="principles">
+        <div class="principle">
+            <img src="css/images/box_over.webp" alt="">
+            <h3>Convenience</h3>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                Pre-measured ingredients & easy recipes
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                Contactless, doorstep delivery across UAE
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                Skip a delivery or cancel anytime
+            </p>
+        </div>
+        <div class="principle">
+            <img src="css/images/variety-hi.webp" alt="">
+            <h3>Variety</h3>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                New recipes every week
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                24+ dishes to choose from
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                Low calories & family-friendly options
+            </p>
+        </div>
+        <div class="principle">
+            <img src="css/images/salmon_katsu.webp" alt="">
+            <h3>Deliciousness</h3>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                No skimping' on the portion size!
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                100% satisfaction guarantee, or we will make it right
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>
+                Fresh ingridients from local,trusted suppliers
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION Three -->
+ <section class="sectionThree">
+    <div class="steps">
+        <h2>How it works</h2>
+         <p>
+            Simply home cooking in just 4 easy steps. Get quality ingredients & great recipes delivered to your door.
+        </p>
+
+        <p>
+            <span>1</span>
+        Select your box
+        </p>
+
+        <p>
+            <span>2</span>
+        Choose your recipes
+        </p>
+
+        <p>
+            <span>3</span>
+        Receive your delivery
+        </p>
+
+        <p>
+            <span>4</span>
+        Cook,eat and enjoy
+        </p>
+
+        <button>learn more</button>
+    </div>
+
+    <img src="css/images/Family_cooking.webp">
+ </section>
+
+<!-- sectionFour -->
+ <section class="sectionFour">
+    <h2>Ready to cook healthy & inspiring meals?</h2>
+    <p>
+        Choose from 24+ recipes every week - from light, low-calorie dishes to hearty, family favourites. Look out for our handy recipe tags to make choosing even simpler.
+    </p>
+   <!--This is cursoual  -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="css/images/vegan.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="css/images/weekly_classic.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="css/images/Vegetarian.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+</div>
+<!-- carousel for 1024 -->
+<div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+  <div class="swiper">
+    <div class="carousel-item">
+      <img class="d-block w-100" src="css/images/vegan.webp" alt="First slide">
+      <button>Vegan</button>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="css/images/weekly_classic.webp" alt="Second slide">
+      <button class="baron">Weekly classic</button>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="css/images/Vegetarian.webp" alt="Third slide">
+      <button class="veg">Vegetarian</button>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<button>View menu</button>
+
+</section>
+
+<!-- THIS IS SECTION 5  -->
+
+<section class="sectionFive">
+    <h2>
+        <img src="https://res.cloudinary.com/hellochef/image/upload/c_fill,dpr_auto,f_webp,fl_progressive,q_auto,w_auto/v1/website/V2/homepage/instagram.webp" alt="Hellochef Instagram" loading="lazy" class="insta">
+        <span> #hellochef</span>
+    </h2>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="css/images/dxblivin-credit.webp" alt="Photo 1">
+        </div>
+
+        <div class="grid-item">
+            <img src="css/images/ayshasaiha.webp" alt="Photo 2">
+        </div>
+
+        <div class="grid-item">
+            <img src="css/images/shrimply.webp" alt="Photo 3">
+        </div>
+
+        <div class="grid-item">
+            <img src="css/images/ashley_dxb.webp" alt="Photo 4">
+        </div>
+    </div>
+    <div class="stars">
+        <p>Over
+        <span>3 million meals</span><br>
+        Cooked and loved by our customers
+        </p>
+        <p>
+            4.9
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            350+ reviews on 
+            <img src="css/images/google.webp" alt="">
+
+        </p>
+        <div class="end">
+            <p class="b">
+                   <img src="img/badge.png" alt=""> 
+                   <img src="img/new.png" alt="">
+                <div class="pt5a">
+                <h5>Hello Chef is a certified<span>B Corp!</span></h5>
+                <p>We're proud to join a global movement of companies using business as a force for good. </p>
+                </div>
+            </p>
+        </div>
+    </div>
+
+</section>
+<!-- sectionsix -->
+<section class="sectionSix">
+    <img src="css/images/subscribe.webp" alt="">
+    <div class="form">
+        <h2>Hungry for more?</h2>
+        <p>
+            Sign up to our newsletter for exciting updates and weekly recipe inspiration, delivered straight to your inbox.
+        </p>
+
+        <div class="input">
+            <label>Email Address</label>
+            <input type="email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <p class="cta">
+        We are a weekly meal subscription service based in Dubai, delivering pre-portioned ingredients and easy-to-follow recipe cards across the UAE. Our healthy meal delivery service means you can say goodbye to stressful meal planning and instead, spend time enjoying delicious food with loved ones. Our pre-measured, ready-to-cook boxes make it easier than ever for you to discover new flavours every week.
+    </p>
+</section>
+<footer>
+    <div class="footer">
+        <div class="footer-logo">
+            <svg viewBox="0 0 132 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M46.6447 6.75098H41.7716V27.9993H46.6447V6.75098Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.759 27.9991V19.0979C15.759 16.9151 15.7879 15.0204 14.2656 13.269C13.2314 12.0625 11.4801 11.5177 9.93011 11.5177C8.32223 11.5177 6.6565 12.0348 5.82363 13.5282H5.76698V6.75195H1V27.9991H5.76698V19.1558C5.76698 17.3466 6.36964 15.9967 8.43794 15.9967C10.505 15.9967 10.9932 17.6045 10.9932 19.3269V27.9979H15.759V27.9991Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M100.877 27.9993V19.0981C100.877 16.9165 100.906 15.0218 99.3839 13.2693C98.3497 12.0628 96.5984 11.518 95.0484 11.518C93.4405 11.518 91.7748 12.035 90.9419 13.5272H90.8841V6.75098H86.1183V27.9993H90.8841V19.156C90.8841 17.3468 91.4867 15.9981 93.555 15.9981C95.6221 15.9981 96.1103 17.606 96.1103 19.3283V27.9993H100.877Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M127.972 16.0849H125.962V27.9981H121.197V16.0849H119.416V12.4678H121.197V11.6349C121.197 7.75864 123.953 6.75342 127.284 6.75342H127.973V10.3428C126.251 10.3428 125.964 10.6875 125.964 12.4678H127.973V16.0849H127.972Z" fill="#E42A12"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.8109 27.9993V6.75098H34.9379V27.9993H39.8109Z" fill="#E42A12"></path><path d="M56.234 11.0332C51.549 11.0332 47.7511 14.8311 47.7511 19.5161C47.7511 24.2012 51.549 27.9991 56.234 27.9991C60.9191 27.9991 64.717 24.2012 64.717 19.5161C64.717 14.8311 60.9191 11.0332 56.234 11.0332ZM56.234 23.5383C54.0223 23.5383 52.4144 21.6712 52.4144 19.5186C52.4144 17.3647 54.0223 15.4989 56.234 15.4989C58.4446 15.4989 60.0525 17.3647 60.0525 19.5186C60.0525 21.6724 58.4446 23.5383 56.234 23.5383Z" fill="#E42A12"></path><path d="M56.9086 9.60708C56.9134 9.61191 56.9182 9.61673 56.923 9.62155C57.698 10.3869 58.9094 10.5352 59.8579 9.99881C61.0669 9.3142 61.9769 8.16192 62.3421 6.78787C62.4554 6.35999 62.5168 5.908 62.5168 5.44516C62.5168 5.00281 62.4614 4.57132 62.3565 4.16031C61.9455 4.05544 61.514 4 61.0717 4C60.6089 4 60.1569 4.06147 59.729 4.17477C58.3549 4.53998 57.2027 5.44998 56.518 6.65891C55.9817 7.60628 56.1299 8.81881 56.8953 9.59383C56.8989 9.59744 56.9037 9.60226 56.9086 9.60708Z" fill="#E42A12"></path><path d="M80.0734 21.4408C79.4442 22.6714 78.2196 23.5356 76.7154 23.5356C74.5036 23.5356 72.8958 21.6686 72.8958 19.5159C72.8958 17.362 74.5036 15.4962 76.7154 15.4962C78.2895 15.4962 79.5575 16.4436 80.1577 17.7658H85.0139C84.2076 13.9209 80.799 11.0342 76.7154 11.0342C72.0316 11.0342 68.2361 14.8321 68.2361 19.5171C68.2361 24.2021 72.0328 28.0001 76.7154 28.0001C80.7363 28.0001 84.1039 25.2001 84.9753 21.442H80.0734V21.4408Z" fill="#E42A12"></path><path d="M113.547 22.4812C112.818 23.4177 111.735 24.0252 110.466 24.0252C108.596 24.0252 107.13 22.7078 106.603 20.9577H111.28H114.327H118.825C118.906 20.4888 118.948 20.0079 118.948 19.5161C118.948 14.8311 115.15 11.0332 110.465 11.0332C105.78 11.0332 101.982 14.8311 101.982 19.5161C101.982 24.2012 105.78 27.9991 110.465 27.9991C114.106 27.9991 117.212 25.7042 118.415 22.4812H113.547ZM110.466 15.0071C112.215 15.0071 113.61 16.1594 114.213 17.7383H106.718C107.323 16.1594 108.717 15.0071 110.466 15.0071Z" fill="#E42A12"></path><path d="M28.4287 22.4812C27.6994 23.4177 26.6171 24.0252 25.3479 24.0252C23.4773 24.0252 22.0116 22.7078 21.4849 20.9577H26.1615H29.2085H33.7067C33.7874 20.4888 33.8296 20.0079 33.8296 19.5161C33.8296 14.8311 30.0317 11.0332 25.3467 11.0332C20.6617 11.0332 16.8637 14.8311 16.8637 19.5161C16.8637 24.2012 20.6617 27.9991 25.3467 27.9991C28.9879 27.9991 32.094 25.7042 33.2969 22.4812H28.4287ZM25.3491 15.0071C27.098 15.0071 28.4925 16.1594 29.0964 17.7383H21.6006C22.2045 16.1594 23.599 15.0071 25.3491 15.0071Z" fill="#E42A12"></path></svg>
+        </div>
+        <hr>
+        <div class="grid-container-f">
+            <div class="grid-item">
+                <h2>About us</h2>
+                <p>Our plans</p>
+                <p>How it works</p>
+            </div>
+    
+            <div class="grid-item">
+                <h2>More info</h2>
+                <p>Sustainability</p>
+                <p>B corp</p>
+                <p>Help center</p>
+            </div>
+        </div>
+        <hr>    
+        <div class="grid-container-g">
+            <div class="grid-item">
+                <h2>Work with us</h2>
+                <p>Careers</p>
+                <p>Affiliate Program</p>
+            </div>
+    
+            <div class="grid-item-w">
+                <h2 class="l">Contact us</h2>
+                <p>hello@hellochef.me</p>
+                <p>04 825 44 00</p>
+            </div>
+        </div>
+        <hr>
+        <div class="eta">
+            <h2>Subscribe to our newsletter</h2>
+            <div class="input">
+                <label>Email Address</label>
+                <input type="email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <hr>
+        <div class="n13">
+            <h2>Follow us</h2>
+            <div class="social">
+                <svg version="1.1" id="__3RCdT_X__Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve"><path id="__3RCdT_X__path-1_1_" d="M23,21.7h5.9l0.9-7.1H23v-4.5c0-2.1,0.6-3.5,3.4-3.5H30V0.3C29.4,0.2,27.2,0,24.7,0c-5.2,0-8.8,3.3-8.8,9.4 v5.2H10v7.1h5.9v18.2L23,40V21.7z"></path></svg>
+                <svg version="1.1" id="__7afu1Vv__Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve"><g><path d="M20,9.7C14.3,9.7,9.7,14.3,9.7,20S14.3,30.3,20,30.3S30.3,25.7,30.3,20S25.7,9.7,20,9.7z M20,26.7c-3.7,0-6.7-3-6.7-6.7 s3-6.7,6.7-6.7s6.7,3,6.7,6.7S23.7,26.7,20,26.7z"></path><path d="M30.7,6.9c-1.3,0-2.4,1.1-2.4,2.4s1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4S32,6.9,30.7,6.9z"></path><path d="M39.9,11.8c-0.1-2.1-0.4-3.6-0.9-4.9c-0.5-1.3-1.2-2.4-2.3-3.5c-1.1-1.1-2.2-1.8-3.5-2.3s-2.7-0.8-4.9-0.9 C26.1,0,25.4,0,20,0s-6.1,0-8.2,0.1c-2.2,0.1-3.6,0.5-4.9,1C5.6,1.6,4.5,2.2,3.4,3.4C2.2,4.5,1.6,5.6,1,6.9 c-0.5,1.3-0.8,2.7-0.9,4.9C0,13.9,0,14.6,0,20s0,6.1,0.1,8.2c0.1,2.1,0.4,3.6,0.9,4.9c0.5,1.3,1.2,2.4,2.3,3.5 c1.1,1.1,2.2,1.8,3.5,2.3s2.7,0.8,4.9,0.9C13.9,40,14.6,40,20,40s6.1,0,8.2-0.1c2.1-0.1,3.6-0.4,4.9-0.9c1.3-0.5,2.4-1.2,3.5-2.3 c1.1-1.1,1.8-2.2,2.3-3.5s0.8-2.7,0.9-4.9C40,26.1,40,25.4,40,20S40,13.9,39.9,11.8z M36.3,28.1c-0.1,2-0.4,3-0.7,3.7 c-0.4,0.9-0.8,1.6-1.5,2.3c-0.7,0.7-1.4,1.1-2.3,1.5c-0.7,0.3-1.8,0.6-3.7,0.7c-2.1,0.1-2.7,0.1-8.1,0.1s-6,0-8.1-0.1 c-1.9-0.1-3-0.4-3.7-0.7c-0.9-0.4-1.6-0.8-2.3-1.5c-0.7-0.7-1.1-1.4-1.5-2.3c-0.3-0.7-0.6-1.8-0.7-3.7C3.6,26,3.6,25.3,3.6,20 s0-6,0.1-8.1c0.1-1.9,0.4-3,0.7-3.7c0.4-0.9,0.8-1.6,1.5-2.3c0.7-0.7,1.4-1.1,2.3-1.5c0.7-0.3,1.8-0.6,3.7-0.7 C14,3.6,14.7,3.6,20,3.6s6,0,8.1,0.1c1.9,0.1,3,0.4,3.7,0.7c0.9,0.4,1.6,0.8,2.3,1.5c0.7,0.7,1.1,1.4,1.5,2.3 c0.3,0.7,0.6,1.8,0.7,3.7c0.1,2.1,0.1,2.7,0.1,8.1C36.4,25.3,36.4,26,36.3,28.1z"></path></g></svg>
+                <svg version="1.1" id="__1cq5ay-__Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve"><path id="__1cq5ay-__path-1_1_" d="M15.9,25.9V14.1L26.4,20L15.9,25.9z M39.2,10.4c-0.5-1.7-1.8-3.1-3.5-3.5C32.5,6,20,6,20,6S7.5,6,4.4,6.8 c-1.7,0.5-3.1,1.9-3.6,3.6C0,13.5,0,20,0,20s0,6.5,0.8,9.6c0.5,1.7,1.8,3.1,3.5,3.5C7.5,34,20,34,20,34s12.5,0,15.6-0.8 c1.7-0.5,3.1-1.8,3.5-3.5C40,26.5,40,20,40,20S40,13.5,39.2,10.4z"></path></svg>
+                <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="__3HHQxnh__Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="__3HHQxnh__-homepage_5-Alt" transform="translate(-1225.000000, -4702.000000)" fill="#919191" fill-rule="nonzero"><g id="__3HHQxnh__Group-38" transform="translate(0.000000, 4344.000000)"><g id="__3HHQxnh__Group-37" transform="translate(137.000000, 48.000000)"><g id="__3HHQxnh__Group-Copy-3" transform="translate(1047.000000, 272.000000)"><g id="__3HHQxnh__tiktok-share-icon-black-1" transform="translate(41.000000, 38.000000)"><path d="M25.547619,0 L3.45238095,0 C1.5487381,0 0,1.5487381 0,3.45238095 L0,25.547619 C0,27.4512619 1.5487381,29 3.45238095,29 L25.547619,29 C27.4512619,29 29,27.4512619 29,25.547619 L29,3.45238095 C29,1.5487381 27.4512619,0 25.547619,0 M22.7898571,12.6515952 C22.6315045,12.6669826 22.4725255,12.6750468 22.3134286,12.6757619 C20.5683475,12.6760055 18.9407613,11.7963976 17.9848333,10.3364286 L17.9848333,18.3024524 C17.9848333,21.554134 15.3488245,24.1901429 12.0971429,24.1901429 C8.8454612,24.1901429 6.20945238,21.554134 6.20945238,18.3024524 C6.20945238,15.0507707 8.8454612,12.4147619 12.0971429,12.4147619 C12.2200476,12.4147619 12.3401905,12.4258095 12.4610238,12.4334048 L12.4610238,15.3347857 C12.3401905,15.3202857 12.2214286,15.2981905 12.0971429,15.2981905 C10.4375535,15.2981905 9.09219048,16.6435535 9.09219048,18.3031429 C9.09219048,19.9627322 10.4375535,21.3080952 12.0971429,21.3080952 C13.7570476,21.3080952 15.2229286,20.0003333 15.2229286,18.3404286 L15.2519286,4.8112381 L18.0276429,4.8112381 C18.2893825,7.30035975 20.2964349,9.24459173 22.792619,9.42707143 L22.792619,12.6515952" id="__3HHQxnh__Shape"></path></g></g></g></g></g></g></svg>
+            </div>
+        </div>
+        <hr>
+        <div class="rights">
+            <p>Made with <span>&hearts;</span> for UAE</p>
+            <p>© Copyright 2024 Hello Chef All rights reserved</p>
+            <p class="red">Public Policies & statements</p>
+        </div>
+    </div>
+</footer>
+</main>
+</body>
+</html>

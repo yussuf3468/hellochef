@@ -1,0 +1,223 @@
+@media screen and (min-width: 768px) {
+    .sectionOne img{
+        height: 550px;
+        object-fit: cover;
+        object-position: bottom;
+
+    }
+    .sectionOne .overlay{
+        top: 10%;
+        left: 0;
+    }
+    .sectionOne button{
+        width: 70%;
+    }
+    .sectionOne img:nth-of-type(2){
+        display: none;
+    }
+    /* sectontwo */
+    .sectionTwo .principle{
+        width: 70%;
+        margin: 50px auto;
+    }
+    .sectionTwo img{
+        height: 300px;
+    }
+    /* sectionthree */
+    .sectionThree .steps{
+        padding: 30px 25px;
+    }
+    .sectionThree img{
+        height: 380px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .sectionFour .carouselExampleControls1{
+        display: none;
+    }
+}
+/* larger screens */
+
+@media screen and (min-width:1024px) {
+    nav{
+        padding: 10px 50px;
+    }
+    nav:nth-of-type(1) {
+        display: none;
+    }
+    nav:nth-of-type(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav svg {
+        margin: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #484848;
+    }
+
+    nav button {
+        font-size: 1em;
+        font-weight: 600;
+        border: none;
+        border-radius: 35px;
+        background-color: #e42e13;
+        color: #fff;
+        padding: 15px 20px;
+    }
+    .sectionOne img:nth-of-type(1){
+        display: none;
+    }
+
+    .sectionOne img:nth-of-type(2){
+        display: block;
+    }
+    .sectionOne .overlay{
+        top: 45%;
+        width: 40%;
+        margin-left: calc((100% - 40%)/2);
+    }
+    /* sectiontwo */
+    .sectionTwo p {
+        margin: 0.7em 0 1em;
+    }
+
+    .sectionTwo .principles {
+        display: flex;
+        gap: 30px;
+    }
+
+    .sectionTwo .principle {
+        width: 30%;
+    }
+
+    .sectionTwo img {
+        height: 200px;
+    }
+
+    .sectionTwo h3 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+
+    /* sectionthree */
+
+    .sectionThree{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sectionThree .steps,
+    .sectionThree img {
+        width: 50%;
+        height: 600px;
+    }
+    .sectionThree img{
+        object-position: left;
+    }
+    .sectionThree .steps{
+        padding: 70px 25px;
+    }
+
+    .sectionThree p:nth-of-type(1){
+        text-align: left;
+    }
+
+    .sectionThree button {
+        margin: 25px auto;
+        padding: 15px 30px;
+        width: 50%;
+    }
+    /* sectonfour */
+    .sectionFour{
+        width: 970px;
+        margin: 0px 20px;
+    }
+
+    .sectionFour button{
+        width: 200px;
+        padding: 20px;
+        margin-left: 350px;
+    }
+    .sectionFour #carouselExampleAutoplaying{
+        display: none;
+    }
+    #carouselExampleControls1 {
+        display: flex;
+      }
+    
+    #carouselExampleControls1 .carousel-item{
+        display: block;
+        margin: 15px;
+        width: 30%;
+      } 
+      .sectionFour #carouselExampleControls1 .swiper{
+        padding: 0 15px;
+        overflow: hidden;
+        list-style: none;
+    }
+    .sectionFour #carouselExampleControls1 .swiper img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    } 
+    /* styling the images buttons */
+    .sectionFour #carouselExampleControls1 .swiper button{
+        background-color: #d8f4a4;
+        padding: 5px 10px;
+        border-radius: 12px;
+        position: absolute;
+        width: 100px;
+        bottom: -2.5pc;
+        right: 10px;
+        color: #7ba742;
+    }
+    .sectionFour #carouselExampleControls1 .swiper .veg{
+        width: 110px;
+        background-color: #c8f5da;
+        color: #5ab47e;
+    }
+    
+    .sectionFour #carouselExampleControls1 .swiper .baron{
+        width: 150px;
+        background-color: #d9e3fe;
+        color: #647ad6;
+    }
+    .sectionFour #carouselExampleControls1 a span{
+        background-color: #e42e13;
+    }
+
+    /* sectionfive */
+    .sectionFive .grid-container{
+        display: flex;
+    }
+    .sectionFive .stars{
+        margin: 0 20%;
+    }
+    /* section six */
+    .sectionSix{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sectionSix img{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .sectionSix .form{
+        
+    }
+    
+}
